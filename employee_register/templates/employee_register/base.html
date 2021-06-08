@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,13 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Logo -->
+        <a href="{% url 'employee_insert' %}" class="nav-brand">
+        <img src="{% static '/assets/img/your-logo.png' %}" width="205" height="52" 
+            class="d-inline-block align-top" alt="" style="padding-left: 30px;"> 
+        </a>
+    </nav>    
     <div class="container">
         <div class="col-md-10 offset-md-1 mt-5">
             <div class="p-5 mb-4 bg-light rounded-3">
@@ -26,6 +34,12 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <p class="text-light" style="text-align:center;">App desenvolvido por <a href="https://github.com/Flaviohmm" target="_blank" rel="noreferrer">Flavio Mendes</a></p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
